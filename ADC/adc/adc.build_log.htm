@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\VINOD\Documents\lpc2148\ADC\adc\adc.uvproj
+Project File Date:  07/20/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=7948 RO-data=208 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\adc.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+(s), 0 Warning(s).
+1 << 1) |         // Select channel 1 (AD0.1)
+adc_init.c(14): error:  #20: identifier "AD0CR" is undefined
+      AD0CR |= (1 << 24);               // Start conversion
+adc_init.c(15): error:  #20: identifier "AD0GDR" is undefined
+      while (!(AD0GDR & (1U << 31)));   // Wait for DONE bit
+adc_init.c: 1 warning, 3 errors
+".\adc.axf" - 3 Error(s), 1 Warning(s).
+Target not created

@@ -1,0 +1,14 @@
+Dependencies for Project 'lcd_display', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\lcd.c)(0x687F3AF7)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\lcd.o --omf_browse .\lcd.crf --depend .\lcd.d)
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.h)(0x532C1500)
+I (header.h)(0x687F3AF7)
+F (.\main.c)(0x687F4E7F)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.h)(0x532C1500)
+I (header.h)(0x687F3AF7)
+I (timer.h)(0x687F30A5)
+F (.\adc_init.c)(0x687F4DF3)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\adc_init.o --omf_browse .\adc_init.crf --depend .\adc_init.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.h)(0x532C1500)
+I (header.h)(0x687F3AF7)
+F (.\header.h)(0x687F3AF7)()
+F (.\timer.h)(0x687F30A5)()

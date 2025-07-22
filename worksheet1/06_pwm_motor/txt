@@ -1,0 +1,23 @@
+#include<LPC214X.h>
+void rundcmotor(int direction,int dutycycle){
+	if(direction==1){
+		IOSET0 = 1<<28;
+	}
+	else
+	{
+		IOCLR0=1<<28;
+	}
+	PWMMR0=1000;
+	PWMMR6=(1000u*dutycycle)/100;
+	PWMPCR=(1<<14);
+	PWMTCR=0x09;
+	PWMLER=0x70;
+}
+int main(){
+	IODIR0 |= 1<<28;
+	//IODIR0 |= 1<<29;
+	PINSEL0 |= 2<<9;
+	rundcmotor(2,50);
+	while(1);
+}
+

@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\VINOD\Documents\lpc2148\I2C\i2c_slave\i2c_slave.uvproj
+Project File Date:  07/21/2025
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling i2c.c...
+compiling slave.c...
+compiling uart.c...
+linking...
+Program Size: Code=1232 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+".\i2c_slave.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+s.
+".\i2c_slave.axf" - 1 Error(s), 0 Warning(s).
+Target not created
+defined
+      I2C0CONSET = 0x10;   // Set STO
+i2c.c(11): error:  #20: identifier "I2C0CONCLR" is undefined
+      I2C0CONCLR = 0x08;   // Clear SI
+i2c.c(17): error:  #20: identifier "I2C0DAT" is undefined
+      I2C0DAT = data;
+i2c.c(18): error:  #20: identifier "I2C0CONCLR" is undefined
+      I2C0CONCLR = 0x08;            // Clear SI
+i2c.c(19): error:  #20: identifier "I2C0CONSET" is undefined
+      while (!(I2C0CONSET & 0x08)); // Wait for SI
+i2c.c(24): error:  #20: identifier "I2C0CONSET" is undefined
+      I2C0CONSET = 0x04;            // Set AA (assert ACK)
+i2c.c(25): error:  #20: identifier "I2C0CONCLR" is undefined
+      I2C0CONCLR = 0x08;            // Clear SI
+i2c.c(27): error:  #20: identifier "I2C0DAT" is undefined
+      return I2C0DAT;
+i2c.c(32): error:  #20: identifier "I2C0CONCLR" is undefined
+      I2C0CONCLR = 0x04;            // Clear AA (assert NACK)
+i2c.c(34): error:  #20: identifier "I2C0CONSET" is undefined
+      while (!(I2C0CONSET & 0x08)); // Wait for SI
+i2c.c(35): error:  #20: identifier "I2C0DAT" is undefined
+      return I2C0DAT;
+i2c.c(42): error:  #20: identifier "I2C0CONSET" is undefined
+          I2C0CONSET = 0x04;            // Set AA (ACK)
+i2c.c(43): error:  #20: identifier "I2C0CONCLR" is undefined
+          I2C0CONCLR = 0x08;            // Clear SI
+i2c.c(45): error:  #20: identifier "I2C0DAT" is undefined
+          arr[i] = I2C0DAT;
+i2c.c(48): error:  #20: identifier "I2C0CONCLR" is undefined
+      I2C0CONCLR = 0x04;            // Clear AA (NACK)
+i2c.c(50): error:  #20: identifier "I2C0CONSET" is undefined
+      while (!(I2C0CONSET & 0x08)); // Wait for SI
+i2c.c(51): error:  #20: identifier "I2C0DAT" is undefined
+      arr[bytes - 1] = I2C0DAT;
+i2c.c: 0 warnings, 19 errors
+compiling slave.c...
+".\i2c_slave.axf" - 19 Error(s), 0 Warning(s).
+Target not created

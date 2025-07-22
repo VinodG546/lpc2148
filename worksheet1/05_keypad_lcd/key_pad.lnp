@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+".\lcd.o"
+".\key_pad.o"
+--strict --scatter ".\key_pad.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\key_pad.map" -o .\key_pad.axf

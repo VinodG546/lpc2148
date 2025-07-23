@@ -415,6 +415,16 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>header.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\header.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

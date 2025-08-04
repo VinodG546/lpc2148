@@ -1,8 +1,13 @@
 #include<LPC21XX.h>
-#include"header.h"
+
 
 #define THRE ((U0LSR>>5)&1)
 #define RDR (U0LSR&0x01)
+
+void init_uart(unsigned int baudrate);
+void uart_tx(unsigned char data);
+void uart_tx_string(char*str);
+unsigned char uart_rx(void);
 
 void init_uart(unsigned int baudrate)
 { 
@@ -23,7 +28,7 @@ void uart_tx(unsigned char data){
 	while(THRE==0);
 }
 
-void uart_tx_string(const char*str){
+void uart_tx_string(char*str){
 	int i;
 	for(i=0;str[i];i++){
 		uart_tx(str[i]);

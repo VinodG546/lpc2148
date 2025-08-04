@@ -1,0 +1,14 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\list.o"
+".\queue.o"
+".\tasks.o"
+".\heap_2.o"
+".\port.o"
+".\portasm.o"
+".\uart.o"
+".\main.o"
+--strict --scatter ".\binary_semaphore.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\binary_semaphore.map" -o .\binary_semaphore.axf

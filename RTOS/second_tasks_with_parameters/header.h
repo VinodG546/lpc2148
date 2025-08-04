@@ -1,0 +1,6 @@
+void init_uart(unsigned int baud);
+void uart_tx(unsigned char data);
+void uart_tx_string(const char *str);
+unsigned char uart_rx(void);
+
+

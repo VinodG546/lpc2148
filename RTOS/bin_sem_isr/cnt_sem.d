@@ -1,0 +1,16 @@
+.\cnt_sem.o: cnt_sem.c
+.\cnt_sem.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\FreeRTOS.h
+.\cnt_sem.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\cnt_sem.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\FreeRTOSConfig.h
+.\cnt_sem.o: C:\Keil\ARM\Inc\Philips\lpc214x.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\projdefs.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\portable.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\deprecated_definitions.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\mpu_wrappers.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\task.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\list.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\semphr.h
+.\cnt_sem.o: C:\Keil\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\queue.h
